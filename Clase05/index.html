@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculadora Modular · Talento Lab</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+
+  <body>
+    <main class="box">
+      <h1 id="titulo-principal">Calculadora Modular</h1>
+      <p>Versión estática para prácticas de selectores y automatización.</p>
+
+      <!-- Formulario principal -->
+      <form id="form-calculadora" action="#" method="post">
+        <div class="campo">
+          <label for="num1">Primer número</label>
+          <input type="number" id="num1" name="num1" required />
+        </div>
+
+        <div class="campo">
+          <label for="num2">Segundo número</label>
+          <input type="number" id="num2" name="num2" required />
+        </div>
+
+        <fieldset class="campo">
+          <legend>Operación</legend>
+          <label
+            ><input
+              type="radio"
+              name="operacion"
+              value="sumar"
+              id="op-sumar"
+              checked
+            />
+            Sumar</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="operacion"
+              value="restar"
+              id="op-restar"
+            />
+            Restar</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="operacion"
+              value="multiplicar"
+              id="op-multiplicar"
+            />
+            Multiplicar</label
+          >
+          <label
+            ><input
+              type="radio"
+              name="operacion"
+              value="dividir"
+              id="op-dividir"
+            />
+            Dividir</label
+          >
+        </fieldset>
+
+        <button type="submit" id="btn-calcular" class="btn primario">
+          Calcular
+        </button>
+      </form>
+    </main>
+  </body>
+</html>

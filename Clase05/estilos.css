@@ -1,0 +1,86 @@
+/* --- Reset mínimo ---------------------------------------------------- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Layout ---------------------------------------------------------- */
+body {
+  font-family: system-ui, sans-serif;
+  background: #f2f4f7;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* --- Tarjeta central ------------------------------------------------- */
+.box {
+  background: #fff;
+  width: 320px;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+p {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+/* --- Formulario ------------------------------------------------------ */
+.campo {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+input[type="number"],
+select {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Fieldset operación */
+fieldset {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+legend {
+  padding: 0 0.5rem;
+  font-weight: 600;
+}
+fieldset label {
+  display: inline-block;
+  margin-right: 0.75rem;
+  font-weight: 400;
+}
+
+/* --- Botón ----------------------------------------------------------- */
+.btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.primario {
+  background: #0275d8;
+  color: #fff;
+}
+.primario:hover {
+  background: #01549e;
+}
