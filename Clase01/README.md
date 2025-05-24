@@ -13,6 +13,5 @@ Este ejercicio valida que el entorno local está listo para el curso de Automati
 2. Instala las extensiones recomendadas (VS Code te lo sugerirá al abrir la carpeta).
 3. Ejecuta en la terminal integrada:(Debes estar dentro de Clase01)
    python3 test.py
-
-4.Debieras ver:
-¡Hola Automation Tester!
+   4.Debieras ver:
+   ¡Hola Automation Tester!
