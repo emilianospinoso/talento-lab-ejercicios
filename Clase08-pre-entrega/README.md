@@ -43,10 +43,10 @@ Asegúrate de que el WebDriver esté en tu PATH o especifica su ubicación en el
 
 ▶️ Ejecución de las Pruebas
 Para ejecutar todas las pruebas:
-python3 -m pytest pre_entrega_modelo/test_saucedemo.py -v
+python3 -m pytest test_saucedemo.py -v
 
 Para generar un reporte HTML:
-python3 -m pytest pre_entrega_modelo/test_saucedemo.py -v --html=reporte.html
+python3 -m pytest test_saucedemo.py -v --html=reporte.html
 
 ✅ Funcionalidades Implementadas
 
