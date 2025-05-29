@@ -1,0 +1,34 @@
+16:58:19 INFO talentolab_bdd – === INICIANDO SESIÓN PYTEST + BDD ===
+16:58:19 INFO talentolab_bdd – === EJECUTANDO SUITE BDD SMOKE DESDE PYTEST ===
+16:58:19 INFO talentolab_bdd – Salida de Behave:
+16:58:19 INFO talentolab_bdd –   ParserError: Failed to parse "/home/emilianospinoso/Escritorio/talento-lab-ejercicios/Clase14/talentolab_framework/features/cart.feature": 
+16:58:19 INFO talentolab_bdd –   Parser failure in state init, at line 2: "Feature: Carrito de compras"
+16:58:19 INFO talentolab_bdd –   REASON: No feature found.
+16:58:19 INFO talentolab_bdd – === EJECUTANDO SUITE BDD REGRESSION DESDE PYTEST ===
+16:58:19 INFO talentolab_bdd – Salida de Behave Regression:
+16:58:19 INFO talentolab_bdd –   ParserError: Failed to parse "/home/emilianospinoso/Escritorio/talento-lab-ejercicios/Clase14/talentolab_framework/features/cart.feature": 
+16:58:19 INFO talentolab_bdd –   Parser failure in state init, at line 2: "Feature: Carrito de compras"
+16:58:19 INFO talentolab_bdd –   REASON: No feature found.
+16:58:19 WARNING talentolab_bdd – Suite BDD @regression completada con advertencias (código 1)
+16:58:19 INFO talentolab_bdd – === EJECUTANDO SUITE BDD COMPLETA DESDE PYTEST ===
+16:58:19 ERROR talentolab_bdd – Errores en suite completa:
+16:58:19 ERROR talentolab_bdd –   usage: behave [options] [ [DIR|FILE|FILE:LINE] ]+
+16:58:19 ERROR talentolab_bdd –   behave: error: format=html is unknown
+16:58:19 INFO talentolab_bdd – === SESIÓN PYTEST FINALIZADA (exit: 1) ===
+16:59:48 INFO talentolab_bdd – === INICIANDO SESIÓN PYTEST + BDD ===
+16:59:48 INFO talentolab_bdd – === EJECUTANDO SUITE BDD SMOKE DESDE PYTEST ===
+16:59:48 INFO talentolab_bdd – Salida de Behave:
+16:59:48 INFO talentolab_bdd –   ParserError: Failed to parse "/home/emilianospinoso/Escritorio/talento-lab-ejercicios/Clase14/talentolab_framework/features/cart.feature": 
+16:59:48 INFO talentolab_bdd –   Parser failure in state init, at line 2: "Feature: Carrito de compras"
+16:59:48 INFO talentolab_bdd –   REASON: No feature found.
+16:59:48 INFO talentolab_bdd – === EJECUTANDO SUITE BDD REGRESSION DESDE PYTEST ===
+16:59:48 INFO talentolab_bdd – Salida de Behave Regression:
+16:59:48 INFO talentolab_bdd –   ParserError: Failed to parse "/home/emilianospinoso/Escritorio/talento-lab-ejercicios/Clase14/talentolab_framework/features/cart.feature": 
+16:59:48 INFO talentolab_bdd –   Parser failure in state init, at line 2: "Feature: Carrito de compras"
+16:59:48 INFO talentolab_bdd –   REASON: No feature found.
+16:59:48 WARNING talentolab_bdd – Suite BDD @regression completada con advertencias (código 1)
+16:59:48 INFO talentolab_bdd – === EJECUTANDO SUITE BDD COMPLETA DESDE PYTEST ===
+16:59:48 ERROR talentolab_bdd – Errores en suite completa:
+16:59:48 ERROR talentolab_bdd –   usage: behave [options] [ [DIR|FILE|FILE:LINE] ]+
+16:59:48 ERROR talentolab_bdd –   behave: error: format=html is unknown
+16:59:48 INFO talentolab_bdd – === SESIÓN PYTEST FINALIZADA (exit: 1) ===
