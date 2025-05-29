@@ -1,15 +1,33 @@
-# Ejecutar todos los tests
+# Clase 11: Automatización de Pruebas de API - Parte 1
 
-pytest tests/ -v -s
+Este repositorio contiene los ejercicios y ejemplos de la Clase 11 del curso de Automatización de Pruebas.
 
-# Ejecutar solo tests de login
+## 📁 Estructura del proyecto
 
-pytest tests/test_login_csv.py -v -s
+Clase11/
+├── reqres_example/ # Ejemplos básicos con reqres.in
+│ ├── test01.py # Primer ejemplo con GitHub API
+│ ├── test02.py # GET request - listar usuarios
+│ ├── test03.py # POST request - crear usuario
+│ └── test04.py # POST request - login
+├── talentoLab_ejercicio/ # Ejercicio principal de TalentoLab
+│ ├── datos/ # Archivos de datos (CSV/JSON)
+│ ├── pages/ # Page Object Model para UI
+│ ├── tests/ # Tests de UI (Selenium)
+│ ├── tests_api/ # Tests de API (Requests)
+│ ├── utils/ # Utilidades compartidas
+│ ├── conftest.py # Fixtures de pytest
+│ └── pytest.ini # Configuración de pytest
+└── README.md
 
-# Ejecutar solo tests de carrito
+## 🚀 Instalación y configuración
 
-pytest tests/test_carrito_json.py -v -s
+### Prerequisitos
 
-# Ejecutar tests de smoke
+- Python 3.8+
+- Chrome/Chromium instalado
+- ChromeDriver configurado
 
-pytest -m smoke -v -s
+### Instalar dependencias
+
+pip install requests selenium pytest faker pytest-html
