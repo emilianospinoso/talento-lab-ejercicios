@@ -277,7 +277,7 @@ def test_informacion_completa_producto_en_carrito(usuario_logueado):
     
     # Verificar que los precios tienen formato correcto (empiezan con $)
     for precio in precios:
-        assert precio.startswith('), f"El precio '{precio}' no tiene el formato correcto"
+        assert precio.startswith('$'), f"El precio '{precio}' no tiene el formato correcto"
     
     print(f"✅ Información completa del producto verificada en el carrito")
 
