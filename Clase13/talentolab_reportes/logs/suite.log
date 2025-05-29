@@ -1,0 +1,102 @@
+16:18:05 INFO talentolab – ==================================================
+16:18:05 INFO talentolab – NUEVA SESIÓN DE TESTING - 2025-05-29 16:18:05
+16:18:05 INFO talentolab – ==================================================
+16:18:05 INFO talentolab – Configurando WebDriver...
+16:18:06 INFO talentolab – WebDriver configurado exitosamente
+16:18:06 INFO talentolab – Realizando login previo para tests de carrito
+16:18:06 INFO talentolab – Navegando a https://www.saucedemo.com/
+16:18:06 INFO talentolab – Realizando login completo para usuario: standard_user
+16:18:06 INFO talentolab – Completando usuario: standard_user
+16:18:07 INFO talentolab – Completando contraseña
+16:18:07 INFO talentolab – Haciendo clic en botón de login
+16:18:07 INFO talentolab – === INICIANDO TEST AGREGAR PRODUCTO ===
+16:18:12 INFO talentolab – Carrito vacío (contador = 0)
+16:18:12 INFO talentolab – Agregando primer producto al carrito
+16:18:12 INFO talentolab – Primer producto agregado exitosamente
+16:18:12 INFO talentolab – Contador del carrito: 1
+16:18:12 INFO talentolab – Carrito actualizado: 0 -> 1
+16:18:12 INFO talentolab – === TEST AGREGAR PRODUCTO COMPLETADO ===
+16:18:12 INFO talentolab – Cerrando WebDriver...
+16:18:12 INFO talentolab – Configurando WebDriver...
+16:18:12 INFO talentolab – WebDriver configurado exitosamente
+16:18:12 INFO talentolab – Realizando login previo para tests de carrito
+16:18:12 INFO talentolab – Navegando a https://www.saucedemo.com/
+16:18:12 INFO talentolab – Realizando login completo para usuario: standard_user
+16:18:12 INFO talentolab – Completando usuario: standard_user
+16:18:13 INFO talentolab – Completando contraseña
+16:18:13 INFO talentolab – Haciendo clic en botón de login
+16:18:13 INFO talentolab – === INICIANDO TEST MÚLTIPLES PRODUCTOS ===
+16:18:18 INFO talentolab – Carrito vacío (contador = 0)
+16:18:18 INFO talentolab – Agregando primer producto al carrito
+16:18:18 INFO talentolab – Primer producto agregado exitosamente
+16:18:18 INFO talentolab – Contador del carrito: 1
+16:18:18 INFO talentolab – Producto 1 agregado. Total: 1
+16:18:18 INFO talentolab – Agregando primer producto al carrito
+16:18:18 INFO talentolab – Primer producto agregado exitosamente
+16:18:18 INFO talentolab – Contador del carrito: 2
+16:18:18 INFO talentolab – Producto 2 agregado. Total: 2
+16:18:18 INFO talentolab – Agregando primer producto al carrito
+16:18:18 INFO talentolab – Primer producto agregado exitosamente
+16:18:18 INFO talentolab – Contador del carrito: 3
+16:18:18 INFO talentolab – Producto 3 agregado. Total: 3
+16:18:18 INFO talentolab – === TEST MÚLTIPLES PRODUCTOS COMPLETADO ===
+16:18:18 INFO talentolab – Cerrando WebDriver...
+16:18:18 INFO talentolab – Configurando WebDriver...
+16:18:18 INFO talentolab – WebDriver configurado exitosamente
+16:18:18 INFO talentolab – === INICIANDO TEST DE LOGIN EXITOSO ===
+16:18:18 INFO talentolab – Navegando a https://www.saucedemo.com/
+16:18:19 INFO talentolab – Realizando login completo para usuario: standard_user
+16:18:19 INFO talentolab – Completando usuario: standard_user
+16:18:19 INFO talentolab – Completando contraseña
+16:18:19 INFO talentolab – Haciendo clic en botón de login
+16:18:19 INFO talentolab – Obteniendo título de la página de inventario
+16:18:19 INFO talentolab – Título obtenido: Products
+16:18:19 INFO talentolab – === TEST DE LOGIN EXITOSO COMPLETADO ===
+16:18:19 INFO talentolab – Cerrando WebDriver...
+16:18:19 INFO talentolab – Configurando WebDriver...
+16:18:19 INFO talentolab – WebDriver configurado exitosamente
+16:18:19 INFO talentolab – === INICIANDO TEST DE LOGIN FALLIDO ===
+16:18:19 INFO talentolab – Navegando a https://www.saucedemo.com/
+16:18:20 INFO talentolab – Realizando login completo para usuario: usuario_malo
+16:18:20 INFO talentolab – Completando usuario: usuario_malo
+16:18:20 INFO talentolab – Completando contraseña
+16:18:20 INFO talentolab – Haciendo clic en botón de login
+16:18:20 WARNING talentolab – Error de login visible
+16:18:20 WARNING talentolab – Error de login visible
+16:18:20 ERROR talentolab – Mensaje de error obtenido: Epic sadface: Username and password do not match any user in this service
+16:18:20 INFO talentolab – Error esperado mostrado: Epic sadface: Username and password do not match any user in this service
+16:18:20 INFO talentolab – === TEST DE LOGIN FALLIDO COMPLETADO ===
+16:18:20 INFO talentolab – Cerrando WebDriver...
+16:18:20 INFO talentolab – Configurando WebDriver...
+16:18:20 INFO talentolab – WebDriver configurado exitosamente
+16:18:20 INFO talentolab – === INICIANDO TEST DE USUARIO BLOQUEADO ===
+16:18:20 INFO talentolab – Navegando a https://www.saucedemo.com/
+16:18:21 INFO talentolab – Realizando login completo para usuario: locked_out_user
+16:18:21 INFO talentolab – Completando usuario: locked_out_user
+16:18:21 INFO talentolab – Completando contraseña
+16:18:21 INFO talentolab – Haciendo clic en botón de login
+16:18:21 WARNING talentolab – Error de login visible
+16:18:21 WARNING talentolab – Error de login visible
+16:18:21 ERROR talentolab – Mensaje de error obtenido: Epic sadface: Sorry, this user has been locked out.
+16:18:21 INFO talentolab – === TEST DE USUARIO BLOQUEADO COMPLETADO ===
+16:18:21 INFO talentolab – Cerrando WebDriver...
+16:18:21 INFO talentolab – === INICIANDO TEST VALIDACIÓN USUARIO API ===
+16:18:21 INFO talentolab – Validando usuario con email: Sincere@april.biz
+16:18:21 INFO talentolab – Usuario validado correctamente
+16:18:21 INFO talentolab – === TEST VALIDACIÓN USUARIO COMPLETADO ===
+16:18:21 INFO talentolab – === INICIANDO TEST USUARIO INEXISTENTE ===
+16:18:21 INFO talentolab – Verificando que no existe: usuario@inexistente.com
+16:18:21 INFO talentolab – Usuario inexistente verificado correctamente
+16:18:21 INFO talentolab – === TEST USUARIO INEXISTENTE COMPLETADO ===
+16:18:21 INFO talentolab – === INICIANDO CICLO DE VIDA COMPLETO ===
+16:18:21 INFO talentolab – PASO 1: Creando post...
+16:18:21 INFO talentolab – Post creado con ID: 101
+16:18:21 INFO talentolab – PASO 2: Actualizando post...
+16:18:22 INFO talentolab – Post actualizado correctamente
+16:18:22 INFO talentolab – PASO 3: Eliminando post...
+16:18:22 INFO talentolab – Post eliminado correctamente
+16:18:22 INFO talentolab – Ciclo completado en 1.30s
+16:18:22 INFO talentolab – === CICLO DE VIDA COMPLETADO ===
+16:18:22 INFO talentolab – ==================================================
+16:18:22 INFO talentolab – FIN DE SESIÓN DE TESTING
+16:18:22 INFO talentolab – ==================================================
