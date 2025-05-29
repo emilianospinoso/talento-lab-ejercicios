@@ -1,4 +1,4 @@
-# Pre-entrega Proyecto Final - Automatización con Page Object Model
+# Refactorización - Automatización con Page Object Model
 
 Este proyecto implementa una automatización de pruebas para el sitio **SauceDemo** utilizando **Selenium WebDriver**, **Python** y el patrón **Page Object Model (POM)**.
 
@@ -53,16 +53,11 @@ pre-entrega-pom/
 
 ### 1. Clonar el repositorio
 
-```bash
-git clone <url-del-repositorio>
-cd pre-entrega-pom
-```
+/_Debes clonar este repositorio_/
 
 ### 2. Instalar dependencias
 
-```bash
 pip install -r requirements.txt
-```
 
 ### 3. Configurar WebDriver
 
@@ -74,49 +69,45 @@ pip install -r requirements.txt
 
 ### Ejecutar todos los tests
 
-```bash
-pytest -v
-```
+python3 -m pytest -v
 
 ### Ejecutar tests por categoría
 
-```bash
 # Solo tests de login
-pytest tests/test_login.py -v
+
+python3 -m pytest tests/test_login.py -v
 
 # Solo tests del catálogo
-pytest tests/test_catalog.py -v
+
+python3 -m pytest tests/test_catalog.py -v
 
 # Solo tests del carrito
-pytest tests/test_cart.py -v
-```
+
+python3 -m pytest tests/test_cart.py -v
 
 ### Ejecutar tests por marcadores
 
-```bash
 # Solo tests críticos (smoke)
-pytest -m smoke -v
+
+python3 -m pytest -m smoke -v
 
 # Tests de regresión
-pytest -m regression -v
+
+python3 -m pytest -m regression -v
 
 # Tests específicos de funcionalidad
-pytest -m login -v
-pytest -m catalog -v
-pytest -m cart -v
-```
+
+python3 -m pytest -m login -v
+python3 -m pytest -m catalog -v
+python3 -m pytest -m cart -v
 
 ### Generar reporte HTML
 
-```bash
-pytest --html=reporte.html --self-contained-html -v
-```
+python3 -m pytest --html=reporte.html --self-contained-html -v
 
 ### Ejecutar tests en paralelo
 
-```bash
-pytest -n 3 -v  # Ejecuta en 3 procesos paralelos
-```
+python3 -m pytest -n 3 -v # Ejecuta en 3 procesos paralelos
 
 ## 🧪 Casos de Prueba Implementados
 
@@ -165,24 +156,30 @@ pytest -n 3 -v  # Ejecuta en 3 procesos paralelos
 
 ## 🚀 Comandos Útiles
 
-```bash
 # Ejecutar solo tests críticos
-pytest -m smoke --html=smoke_report.html -v
+
+python3 -m pytest -m smoke --html=smoke_report.html -v
 
 # Ejecutar con reintento en fallos
-pytest --reruns 2 --reruns-delay 1 -v
+
+python3 -m pytest --reruns 2 --reruns-delay 1 -v
 
 # Ejecutar con timeout
-pytest --timeout=300 -v
+
+python3 -m pytest --timeout=300 -v
 
 # Ejecutar tests específicos
-pytest tests/test_login.py::test_login_exitoso_credenciales_validas -v
+
+python3 -m pytest tests/test_login.py::test_login_exitoso_credenciales_validas -v
 
 # Mostrar print statements
-pytest -s -v
+
+python3 -m pytest -s -v
 
 # Ejecutar hasta el primer fallo
-pytest -x -v
+
+python3 -m pytest -x -v
+
 ```
 
 ## 📊 Estructura de Page Objects
@@ -223,3 +220,4 @@ pytest -x -v
 - Todos los tests están diseñados para ser independientes y reutilizables
 - La estructura permite fácil escalabilidad para nuevas páginas y funcionalidades
 - Compatible con CI/CD pipelines
+```
