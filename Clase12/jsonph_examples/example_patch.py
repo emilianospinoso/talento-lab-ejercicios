@@ -3,6 +3,7 @@ import pytest
 import time
 
 URL = 'https://jsonplaceholder.typicode.com/posts/1'
+
 PATCH_PAYLOAD = {'title': 'Título actualizado por PATCH'}
 
 def test_patch_post():
