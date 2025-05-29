@@ -2,6 +2,7 @@ from behave import given, when, then, step
 from pages.login_page import LoginPage
 from pages.inventory_page import InventoryPage
 from utils.logger import logger
+from selenium.webdriver.common.by import By
 
 @given('que estoy logueado en SauceDemo con usuario "{usuario}"')
 def step_login_previo(context, usuario):
@@ -65,7 +66,8 @@ def step_agregar_multiples_productos(context):
     context.productos_agregados = 0
     
     for row in context.table:
-        producto = row['Sauce Labs Backpack'] if 'Sauce Labs Backpack' in row.headings else row[0]
+        # Obtener el nombre del producto de la primera columna
+        producto = list(row.cells)[0]
         logger.info(f"Agregando: {producto}")
         context.inventory_page.agregar_producto_por_nombre(producto)
         context.productos_agregados += 1
@@ -75,8 +77,8 @@ def step_navegar_y_volver(context):
     """Simula navegación entre páginas"""
     logger.info("BDD: Navegando a otra sección y volviendo")
     # En SauceDemo podemos ir al carrito y volver
-    context.driver.find_element_by_class_name("shopping_cart_link").click()
-    context.driver.find_element_by_id("continue-shopping").click()
+    context.driver.find_element(By.CLASS_NAME, "shopping_cart_link").click()
+    context.driver.find_element(By.ID, "continue-shopping").click()
 
 @then('el contador del carrito debería mostrar "{contador_esperado}"')
 def step_verificar_contador(context, contador_esperado):
@@ -96,4 +98,5 @@ def step_verificar_boton_remove(context):
     """Verifica que el botón cambió a Remove"""
     logger.info("BDD: Verificando que el botón cambió a Remove")
     # Buscar botón que contenga "remove" en su data-test
-    remove_buttons = context.driver.find_elements_by_css_selector("button[data-test*='remove']")
+    remove_buttons = context.driver.find_elements(By.CSS_SELECTOR, "button[data-test*='remove']")
+    assert len(remove_buttons) > 0, "No se encontraron botones Remove"

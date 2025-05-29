@@ -3,9 +3,8 @@ pytest==7.4.3
 pytest-html==4.1.1
 pytest-check==2.2.2
 
-# BDD con Behave
+# BDD con Behave - version actualizada
 behave==1.2.6
-behave-html-formatter==0.9.10
 
 # Web Testing
 selenium==4.15.2

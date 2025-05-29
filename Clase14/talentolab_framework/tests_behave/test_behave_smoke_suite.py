@@ -14,7 +14,7 @@ def test_behave_smoke_suite():
     reports_dir = pathlib.Path('reports')
     reports_dir.mkdir(exist_ok=True)
     
-    # Ejecutar Behave con filtro @smoke
+    # Ejecutar Behave con filtro @smoke (sin HTML por ahora)
     result = subprocess.run([
         'behave', 
         '-t', '@smoke',
@@ -78,13 +78,11 @@ def test_behave_full_suite():
     reports_dir = pathlib.Path('reports')
     reports_dir.mkdir(exist_ok=True)
     
-    # Ejecutar Behave completo con múltiples formatos
+    # Ejecutar Behave completo solo con JSON (HTML no disponible)
     result = subprocess.run([
         'behave',
         '-f', 'json',
         '-o', 'reports/behave_full.json',
-        '-f', 'html',
-        '-o', 'reports/behave_full.html', 
         '-f', 'pretty'
     ], capture_output=True, text=True)
     
@@ -103,14 +101,11 @@ def test_behave_full_suite():
     
     # Verificar archivos de reporte generados
     json_report = pathlib.Path('reports/behave_full.json')
-    html_report = pathlib.Path('reports/behave_full.html')
     
     assert json_report.exists(), "No se generó el reporte JSON"
-    assert html_report.exists(), "No se generó el reporte HTML"
     
     logger.info(f"Reportes generados:")
     logger.info(f"  JSON: {json_report}")
-    logger.info(f"  HTML: {html_report}")
     
     assert result.returncode == 0, f"La suite BDD completa falló con código {result.returncode}"
     
